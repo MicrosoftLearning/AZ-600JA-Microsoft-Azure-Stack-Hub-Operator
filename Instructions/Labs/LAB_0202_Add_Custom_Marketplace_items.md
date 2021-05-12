@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'ラボ: Azure Gallery Packager を使用してカスタム Marketplace 項目を追加する'
     module: 'モジュール 2: サービスを提供する'

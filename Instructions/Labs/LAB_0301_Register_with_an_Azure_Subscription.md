@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'ラボ: Azure サブスクリプションを使用して Azure Stack Hub を登録する'
     module: 'モジュール 3: データ センター統合を実装する'

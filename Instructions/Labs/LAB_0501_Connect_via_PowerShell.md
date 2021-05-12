@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'ラボ: PowerShell を介して Azure Stack Hub に接続する'
     module: 'モジュール 5: インフラストラクチャを管理する'

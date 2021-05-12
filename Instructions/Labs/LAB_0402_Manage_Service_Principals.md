@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'ラボ: Azure Stack Hub でサービス プリンシパルを管理する'
     module: 'モジュール 4: ID とアクセスを管理する'
