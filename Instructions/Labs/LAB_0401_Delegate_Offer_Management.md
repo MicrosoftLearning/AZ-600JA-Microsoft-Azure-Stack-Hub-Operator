@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab: Azure Stack Hub でオファー管理の役割を委任する'
     module: 'モジュール 4: ID とアクセスを管理する'
