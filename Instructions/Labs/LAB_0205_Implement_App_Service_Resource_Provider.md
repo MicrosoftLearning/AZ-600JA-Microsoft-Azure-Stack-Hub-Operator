@@ -1,6 +1,6 @@
 ﻿---
 lab:
-    title: 'Lab: App Service リソース プロバイダーを Azure Stack Hub に実装する'
+    title: 'ラボ: App Service リソース プロバイダーを Azure Stack Hub に実装する'
     module: 'モジュール 2: サービスを提供する'
 ---
 
@@ -178,8 +178,8 @@ lab:
 1. 「**カスタム デプロイ**」ブレードで「**テンプレートの編集**」をクリックします。
 1. 「**テンプレートの編集**」ブレードの「**パラメーター**」セクションで、以下の値を設定します。
 
-    - **imageReference** の **defaultValue**: **MicrosoftWindowsServer** に設定** | WindowsServer | 2019-Datacenter-Core-smalldisk | latest**
-    - **imageReference** の **allowedValues**: **MicrosoftWindowsServer** に設定** | WindowsServer | 2019-Datacenter-Core-smalldisk | latest**
+    - **imageReference** の **defaultValue**: **MicrosoftWindowsServer** に設定 **| WindowsServer | 2019-Datacenter-Core-smalldisk | latest**
+    - **imageReference** の **allowedValues**: **MicrosoftWindowsServer** に設定 **| WindowsServer | 2019-Datacenter-Core-smalldisk | latest**
     - **fileServerVirtualMachineSize** の **defaultValue**: **Standard_A1_v2** に設定
     - **fileServerVirtualMachineSize** の **allowedValues**: **Standard_A1_v2** に設定
     - **adminPassword** の **defaultValue**: **Pa55w.rd1234** に設定
@@ -590,7 +590,7 @@ lab:
 1. **AzS-HOST1** へのリモート デスクトップ セッション内でスタート メニューの「**スタート**」をクリックし、「**Windows 管理ツール**」をクリックしてから、管理ツールの一覧で「**Active Directory 管理センター**」をダブルクリックします。
 1. 「**Active Directory 管理センター**」コンソールで「**azurestack (ローカル)**」をクリックします。
 1. 詳細ペインで「**ユーザー**」コンテナーをダブルクリックします。
-1. 「**タスク**」ペインの「**ユーザー**」セクションで、**「新規作成」>「ユーザー」**の順にクリックします。
+1. 「**タスク**」ペインの「**ユーザー**」セクションで、**「新規作成」>「ユーザー」** の順にクリックします。
 1. 「**ユーザーの作成**」ウィンドウで、次のように設定してから「**OK**」をクリックします。 
 
     - 完全名: **T1U1**

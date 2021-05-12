@@ -1,6 +1,6 @@
 ﻿---
 lab:
-    title: 'Lab: Azure Stack Hub でログ収集を管理する'
+    title: 'ラボ: Azure Stack Hub でログ収集を管理する'
     module: 'モジュール 5: インフラストラクチャを管理する'
 ---
 
