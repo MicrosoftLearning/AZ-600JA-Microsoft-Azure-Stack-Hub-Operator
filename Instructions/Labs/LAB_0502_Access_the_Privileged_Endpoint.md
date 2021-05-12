@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab: Azure Stack Hub で特権エンドポイントにアクセスする'
     module: 'モジュール 5: インフラストラクチャを管理する'
