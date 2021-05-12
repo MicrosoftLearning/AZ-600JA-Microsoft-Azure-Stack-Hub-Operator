@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab: Azure Stack Hub でパブリック IP アドレスを管理する'
     module: 'モジュール 5: インフラストラクチャを管理する'
