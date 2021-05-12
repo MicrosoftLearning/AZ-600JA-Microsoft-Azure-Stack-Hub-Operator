@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab: Azure Stack Hub で Azure Resource Manager (ARM) テンプレートを検証する'
     module: 'モジュール 2: サービスを提供する'
