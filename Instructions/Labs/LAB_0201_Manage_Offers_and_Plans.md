@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab: Azure Stack Hub でオファーとプランを管理する'
     module: 'モジュール 2: サービスを提供する'
