@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: 'Lab: App Service リソース プロバイダーを Azure Stack Hub に実装する'
     module: 'モジュール 2: サービスを提供する'
