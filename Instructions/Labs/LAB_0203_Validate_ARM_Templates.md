@@ -1,4 +1,4 @@
----
+﻿---
 lab:
     title: 'ラボ: Azure Stack Hub で Azure Resource Manager (ARM) テンプレートを検証する'
     module: 'モジュール 2: サービスを提供する'
@@ -101,6 +101,7 @@ lab:
     Add-AzEnvironment -Name 'AzureStackAdmin' -ArmEndpoint 'https://adminmanagement.local.azurestack.external' `
        -AzureKeyVaultDnsSuffix adminvault.local.azurestack.external `
        -AzureKeyVaultServiceEndpointResourceId https://adminvault.local.azurestack.external
+    ```   
 
 1. 「**管理者: C:\Program Files\PowerShell\7\pwsh.exe**」ウィンドウで以下のコマンドを実行して、新たに登録した **AzureStackAdmin** 環境にサインインします。
 
@@ -180,7 +181,7 @@ lab:
     Validation Summary:
         Passed: 1
         NotSupported: 0
-        例外: 0
+        Exception: 0
         Warning: 0
         Recommend: 0
         Total Templates: 1
@@ -193,13 +194,13 @@ lab:
 
 - Azure Quickstart テンプレートに対してテンプレート検証ツールを実行する
 
-1. **AzS-HOST1** へのリモート デスクトップ セッション内で、AzureStack QuickStart テンプレート レポジトリが表示されている Web ブラウザーから、Azure QuickStart テンプレート レポジトリの「[**Ubuntu VM 上の MySQL Server 5.6**](https://github.com/Azure/azure-quickstart-templates/tree/master/mysql-standalone-server-ubuntu)」ページに移動します。
+1. **AzS-HOST1** へのリモート デスクトップ セッション内で、AzureStack QuickStart テンプレート レポジトリが表示されている Web ブラウザーから、Azure QuickStart テンプレート レポジトリの「[**Ubuntu VM 上の MySQL Server 5.6**](https://github.com/Azure/azure-quickstart-templates/tree/master/application-workloads/mysql/mysql-standalone-server-ubuntu)」ページに移動します。
 1. 「**Ubuntu VM 上の MySQL Server**」ページで「**azuredeploy.json**」をクリックします。
-1. 「[azure-quickstart-templates/mysql-standalone-server-ubuntu/azuredeploy.json](https://github.com/Azure/azure-quickstart-templates/blob/master/mysql-standalone-server-ubuntu/azuredeploy.json)」ページで、テンプレートの内容を確認します。
+1. 「[azure-quickstart-templates/mysql-standalone-server-ubuntu/azuredeploy.json](https://github.com/Azure/azure-quickstart-templates/blob/master/application-workloads/mysql/mysql-standalone-server-ubuntu/azuredeploy.json)」ページで、テンプレートの内容を確認します。
 1. 「**管理者: C:\Program Files\PowerShell\7\pwsh.exe**」ウィンドウに切り替え、以下のコマンドを実行して「azuredeploy.json」ファイルをダウンロードし、これに「**sampletemplate2.json**」と名前を付けて「**C:\\Templates**」フォルダーに保存します。
 
     ```powershell
-    Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/mysql-standalone-server-ubuntu/azuredeploy.json' -UseBasicParsing -OutFile $path\sampletemplate2.json
+    Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/application-workloads/mysql/mysql-standalone-server-ubuntu/azuredeploy.json' -UseBasicParsing -OutFile $path\sampletemplate2.json
     ```
 
 1. **AzS-HOST1** へのリモート デスクトップ セッション内で、Web ブラウザーから[仮想マシン](https://docs.microsoft.com/ja-jp/rest/api/compute/virtualmachines)用の REST API リファレンスに移動し、Azure API の最新バージョンを確認します (本コンテンツの作成時点では **2020-12-01**)。 
@@ -213,7 +214,7 @@ lab:
 
     ```json
     {
-      "apiVersion": "2017/03/30",
+      "apiVersion": "2017-03-30",
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[variables('vmName')]",
       "location": "[parameters('location')]",
@@ -231,7 +232,7 @@ lab:
 
     ```json
     {
-      "apiVersion": "2020/12/01",
+      "apiVersion": "2020-12-01",
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[variables('vmName')]",
       "location": "[parameters('location')]",
@@ -293,19 +294,19 @@ lab:
         "local"
       ],
       "ApiVersions": [
-        "2020/06/01",
-        "2019/12/01",
-        "2019/07/01",
-        "2019/03/01",
-        "2018/10/01",
-        "2018/06/01",
-        "2018/04/01",
-        "2017/12/01",
-        "2017/03/30",
-        "2016/08/30",
-        "2016/03/30",
-        "2015/11/01",
-        "2015/06/15"
+        "2020-06-01",
+        "2019-12-01",
+        "2019-07-01",
+        "2019-03-01",
+        "2018-10-01",
+        "2018-06-01",
+        "2018-04-01",
+        "2017-12-01",
+        "2017-03-30",
+        "2016-08-30",
+        "2016-03-30",
+        "2015-11-01",
+        "2015-06-15"
       ],
       "ApiProfiles": [
         "2017-03-09-profile",
