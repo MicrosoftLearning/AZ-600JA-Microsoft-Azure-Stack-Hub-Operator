@@ -350,7 +350,7 @@ lab:
 - (2 番目のユーザーとして) アドオン プランの可用性を確認する
 
 1. **AzS-HOST1** へのリモート デスクトップ セッション内で、Web ブラウザーの InPrivate セッションを開始します。
-1. Web ブラウザー ウィンドウで [Azure Stack Hub ユーザー ポータル](https://portal.local.azurestack.external)に移動した後、**t1u1@azurestack.local** としてサインインし、パスワードに **Pa55w.rd** と入力します。
+1. Web ブラウザー ウィンドウで [Azure Stack Hub ユーザー ポータル](https://portal.local.azurestack.external)に移動した後、**t1u2@azurestack.local** としてサインインし、パスワードに **Pa55w.rd** と入力します。
 1. Azure Stack Hub ユーザー ポータルのハブ メニューで、「**すべてのサービス**」をクリックします。
 1. サービスの一覧で「**サブスクリプション**」をクリックします。
 1. 「**サブスクリプション**」ブレードで「**t1u2-base-subscription1**」をクリックします。
